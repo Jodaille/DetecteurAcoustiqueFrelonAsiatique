@@ -1,6 +1,10 @@
-/* https://robotzero.one/time-lapse-esp32-cameras/
+/*
+ * Vespa Velutina/Asian Hornet/Frelon Asiatique audio detector
+ * inspiré par:
+ * https://robotzero.one/time-lapse-esp32-cameras/
  * https://github.com/robotzero1/esp32cam-timelapse/blob/master/timelapse-sd.ino
- * @author Bernard Barrois
+ * https://randomnerdtutorials.com/esp32-cam-video-streaming-face-recognition-arduino-ide/
+ * @author Bernard Barrois, Sara et Rui Santos
  */
 #include "esp_camera.h"
 #include "esp_timer.h"
