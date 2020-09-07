@@ -12,7 +12,7 @@ $oParseLog = new ParseLog($WEBHOST);
 while($f = fgets(STDIN)){
 
     $time = date("H");
-    if ($time >= 7 and $time <= 23) {
+    if ($time >= 7 and $time <= 20) {
         $oParseLog->setLogLine($f);
     }
 }
