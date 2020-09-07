@@ -31,6 +31,7 @@ class ParseLog
         if (FALSE !== strpos($line, 'ALERTE')) {
             echo "$line";
             $this->readnext = true;
+            $this->alert();
         } elseif ($this->readnext) {
             echo "$line";
             $this->readnext = false;
@@ -40,5 +41,7 @@ class ParseLog
     protected function alert()
     {
         $command = "ssh {$this->webhost} /home/jody/bin/recordalert.sh";
+        echo $command;
+        exec($command);
     }
 }
